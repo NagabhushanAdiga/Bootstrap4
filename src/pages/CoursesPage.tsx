@@ -1,5 +1,5 @@
 import FilterListRoundedIcon from '@mui/icons-material/FilterListRounded'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import {
   Box,
   Button,
@@ -65,7 +65,7 @@ const CoursesPage = () => (
       </Typography>
       <Grid container spacing={3}>
         {featuredCourses.map((course) => (
-          <Grid xs={12} md={4} key={course.id}>
+          <Grid key={course.id} size={{ xs: 12, md: 4 }}>
             <CourseCard course={course} />
           </Grid>
         ))}
@@ -78,7 +78,7 @@ const CoursesPage = () => (
       </Typography>
       <Grid container spacing={3}>
         {recommendedCourses.map((course) => (
-          <Grid xs={12} md={6} key={course.id}>
+          <Grid key={course.id} size={{ xs: 12, md: 6 }}>
             <CourseCard course={course} compact />
           </Grid>
         ))}

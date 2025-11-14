@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import { Button, Stack } from '@mui/material'
 import { featuredCourses } from '../../data'
 import CourseCard from '../common/CourseCard'
@@ -18,7 +18,7 @@ const CourseShowcase = () => (
     />
     <Grid container spacing={3}>
       {featuredCourses.map((course) => (
-        <Grid xs={12} md={4} key={course.id}>
+        <Grid key={course.id} size={{ xs: 12, md: 4 }}>
           <CourseCard course={course} />
         </Grid>
       ))}

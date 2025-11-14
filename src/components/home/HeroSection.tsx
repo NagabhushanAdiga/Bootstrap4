@@ -1,7 +1,7 @@
 import RocketLaunchRoundedIcon from '@mui/icons-material/RocketLaunchRounded'
 import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded'
 import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRounded'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import { Avatar, Box, Button, Card, CardContent, Chip, Stack, Typography } from '@mui/material'
 import { heroHighlights } from '../../data'
 
@@ -16,8 +16,8 @@ const HeroSection = () => (
       color: 'common.white',
     }}
   >
-    <Grid container spacing={4}>
-      <Grid xs={12} md={7}>
+      <Grid container spacing={4}>
+        <Grid size={{ xs: 12, md: 7 }}>
         <Stack spacing={3}>
           <Chip
             label="Online learning & certification platform"
@@ -54,7 +54,7 @@ const HeroSection = () => (
           </Stack>
         </Stack>
       </Grid>
-      <Grid xs={12} md={5}>
+        <Grid size={{ xs: 12, md: 5 }}>
         <Stack spacing={3}>
           <Card
             sx={{

@@ -2,7 +2,7 @@ import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded'
 import InsightsRoundedIcon from '@mui/icons-material/InsightsRounded'
 import ScheduleRoundedIcon from '@mui/icons-material/ScheduleRounded'
 import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import {
   Card,
   CardContent,
@@ -28,7 +28,7 @@ const DashboardPage = () => (
       description="Live telemetry from your cohorts, capstone milestones, and mentor feedback loops."
     />
     <Grid container spacing={3}>
-      <Grid xs={12} md={3}>
+      <Grid size={{ xs: 12, md: 3 }}>
         <Card>
           <CardContent>
             <Stack spacing={1}>
@@ -44,7 +44,7 @@ const DashboardPage = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={3}>
+      <Grid size={{ xs: 12, md: 3 }}>
         <Card>
           <CardContent>
             <Stack spacing={1}>
@@ -60,7 +60,7 @@ const DashboardPage = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={3}>
+      <Grid size={{ xs: 12, md: 3 }}>
         <Card>
           <CardContent>
             <Stack spacing={1}>
@@ -76,7 +76,7 @@ const DashboardPage = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={3}>
+      <Grid size={{ xs: 12, md: 3 }}>
         <Card>
           <CardContent>
             <Stack spacing={1}>
@@ -95,7 +95,7 @@ const DashboardPage = () => (
     </Grid>
 
     <Grid container spacing={3}>
-      <Grid xs={12} md={8}>
+      <Grid size={{ xs: 12, md: 8 }}>
         <Card>
           <CardContent>
             <Stack spacing={3}>
@@ -105,7 +105,7 @@ const DashboardPage = () => (
               </Stack>
               <Grid container spacing={2}>
                 {featuredCourses.slice(0, 2).map((course) => (
-                  <Grid xs={12} key={course.id}>
+                  <Grid key={course.id} size={{ xs: 12 }}>
                     <CourseCard course={course} />
                   </Grid>
                 ))}
@@ -114,7 +114,7 @@ const DashboardPage = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid xs={12} md={4}>
+      <Grid size={{ xs: 12, md: 4 }}>
         <Card>
           <CardContent>
             <Stack spacing={2}>

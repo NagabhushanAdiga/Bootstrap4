@@ -1,5 +1,5 @@
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import {
   Card,
   CardContent,
@@ -24,7 +24,7 @@ const CertificationsPage = () => (
 
     <Grid container spacing={3}>
       {certificationTracks.map((track) => (
-        <Grid xs={12} md={4} key={track.id}>
+        <Grid key={track.id} size={{ xs: 12, md: 4 }}>
           <Card elevation={0} sx={{ height: '100%', borderRadius: 3, border: '1px solid', borderColor: 'divider' }}>
             <CardContent sx={{ p: 4 }}>
               <Stack spacing={2}>

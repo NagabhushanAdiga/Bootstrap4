@@ -1,5 +1,5 @@
 import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded'
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import {
   Avatar,
   Card,
@@ -19,7 +19,7 @@ const Testimonials = () => (
     />
     <Grid container spacing={3}>
       {testimonials.map((testimonial) => (
-        <Grid xs={12} md={4} key={testimonial.id}>
+        <Grid key={testimonial.id} size={{ xs: 12, md: 4 }}>
           <Card
             elevation={0}
             sx={{

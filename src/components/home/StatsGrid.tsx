@@ -1,11 +1,11 @@
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import { Card, CardContent, Stack, Typography } from '@mui/material'
 import { platformStats } from '../../data'
 
 const StatsGrid = () => (
   <Grid container spacing={3} mb={8}>
     {platformStats.map((stat) => (
-      <Grid xs={12} sm={6} md={3} key={stat.label}>
+      <Grid size={{ xs: 12, sm: 6, md: 3 }} key={stat.label}>
         <Card
           elevation={0}
           sx={{

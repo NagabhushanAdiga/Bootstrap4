@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2'
+import Grid from '@mui/material/Grid'
 import {
   Card,
   CardContent,
@@ -21,7 +21,7 @@ const LearningPathPlanner = () => (
     />
     <Grid container spacing={3}>
       {learningPaths.map((path) => (
-        <Grid xs={12} md={6} key={path.id}>
+        <Grid key={path.id} size={{ xs: 12, md: 6 }}>
           <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid', borderColor: 'divider' }}>
             <CardContent sx={{ p: 4 }}>
               <Stack spacing={3}>
